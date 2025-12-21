@@ -73,7 +73,6 @@ const Dashboard: React.FC<{ data: WorkerData[]; onSelectAll: (checked: boolean) 
   onSelectItem
 }) => {
   const allSelected = data.every(item => item.isSelected);
-  const someSelected = data.some(item => item.isSelected);
 
   return (
     <main className="flex-1 bg-[#f2f4f6] p-8">
