@@ -2,7 +2,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#f9fafb] py-12 sm:py-16 lg:py-20">
+    <section id="employer" className="min-h-screen flex items-center justify-center bg-[#f9fafb] py-12 sm:py-16 lg:py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold text-[#333d4b] mb-8 sm:mb-12 lg:mb-16 tracking-tight">
           &lt;인력특공대란?&gt;

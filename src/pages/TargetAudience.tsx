@@ -46,7 +46,7 @@ const TargetAudience: React.FC = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-24 bg-[#f9fafb]">
+    <section ref={sectionRef} id="faq" className="py-24 bg-[#f9fafb]">
       <div className="max-w-[1100px] mx-auto px-6">
         {/* 제목 영역 */}
         <h2

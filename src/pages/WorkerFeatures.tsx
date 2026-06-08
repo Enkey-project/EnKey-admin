@@ -29,7 +29,7 @@ const WorkerFeatures: React.FC = () => {
   }, []);
   return (
     // 이전 섹션과 배경색을 다르게(예: 흰색 <-> 연회색) 배치하면 더 좋습니다.
-    <section ref={sectionRef} className="py-12 sm:py-16 lg:py-24 bg-white">
+    <section ref={sectionRef} id="worker" className="py-12 sm:py-16 lg:py-24 bg-white">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 1. 섹션 전체 제목 */}
         <h2

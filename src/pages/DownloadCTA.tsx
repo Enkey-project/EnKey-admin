@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-// 캐릭터 이미지들을 import 하세요.
+import { StoreBadgeLinks } from "../components/StoreBadgeLinks";
 import characterLeft from "../Feature/charBlue.png";
 import characterRight from "../Feature/charRed.png";
 
@@ -31,7 +31,7 @@ const DownloadCTA: React.FC = () => {
   }, []);
   return (
     // 마지막 섹션이므로 상하 여백을 충분히(py-32) 줍니다.
-    <section ref={sectionRef} className="py-32  bg-[#f9fafb] ">
+    <section ref={sectionRef} id="cta" className="py-32  bg-[#f9fafb] ">
       <div className="max-w-[1100px] mx-auto px-6 text-center">
         {/* 1. 상단 슬로건 */}
         <p
@@ -90,9 +90,7 @@ const DownloadCTA: React.FC = () => {
             이젠 앱 하나로 해결하세요!
           </p>
 
-          <button className="inline-block px-10 py-4 border-2 border-[#3182f6] text-[#3182f6] hover:bg-[#3182f6] hover:text-white rounded-full text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 active:scale-95">
-            인력특공대 다운로드
-          </button>
+          <StoreBadgeLinks className="final-cta__store" placement="final_cta" />
         </div>
       </div>
     </section>
